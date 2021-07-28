@@ -6,7 +6,7 @@ import { map, take } from "rxjs/operators";
 import "antd/dist/antd.css";
 import { Row, Col, Divider, Card } from "antd";
 
-const names$ = interval(1000).pipe(
+const names$ = interval(3000).pipe(
   map((i) => {
     return stringGenerator();
   }),
